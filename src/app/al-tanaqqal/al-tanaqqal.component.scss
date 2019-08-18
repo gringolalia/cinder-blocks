@@ -23,10 +23,10 @@ aside {
   }
 
 [mdcDrawerHeader], [mdcDrawerToolbarSpacer] {
-  background-color: #607d8b;
+  background-color: #990000;
   color: #ffffff;
   font-size: 20px;
-  padding: 5px 5px;
+  // padding: 5px 5px;
 }
 
 
@@ -41,4 +41,10 @@ aside {
 .blox-demo-main {
     padding: 0px;
     margin: 0px;
+}
+
+[mdcListItem] {
+	margin: -10px -10px -10px;
+	margin-left: 12px;
+	font-size: 16px;
 }

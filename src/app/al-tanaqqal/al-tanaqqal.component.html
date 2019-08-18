@@ -2,7 +2,7 @@
   <aside [mdcDrawerContainer]="drawerType" [(open)]="open">
     <nav mdcDrawer>
 
-      <div mdcDrawerToolbarSpacer *ngIf="toolbarSpacer"></div>
+      <!-- <div mdcDrawerToolbarSpacer *ngIf="toolbarSpacer"></div> -->
       <div mdcDrawerHeader *ngIf="toolbarHeader">
         <div mdcDrawerHeaderContent>
           <i class="material-icons w3-margin-right">directions_bike</i>
@@ -71,46 +71,6 @@
 
     <main #content class="blox-demo-main">
       <router-outlet></router-outlet>
-      <!-- <h1>{{drawerType | titlecase}} Drawer</h1>
-      <p>Click the menu icon above to {{open ? 'close' : 'open'}} the drawer, or use the controls below.</p>
-      <div mdcFormField>
-        <div mdcCheckbox>
-          <input mdcCheckboxInput type="checkbox" [(ngModel)]="open" />
-        </div>
-        <label mdcFormFieldLabel>Open drawer</label>
-      </div>
-      <br/>
-      <div mdcFormField>
-        <div mdcRadio>
-          <input mdcRadioInput type="radio" name="drawerType" value="persistent" [(ngModel)]="drawerType" />
-        </div>
-        <label mdcFormFieldLabel>Persistent Drawer</label>
-      </div>
-      <div mdcFormField>
-        <div mdcRadio>
-          <input mdcRadioInput type="radio" name="drawerType" value="temporary" [(ngModel)]="drawerType" />
-        </div>
-        <label mdcFormFieldLabel>Temporary Drawer</label>
-      </div>
-      <br/>
-      <div mdcFormField>
-        <div mdcRadio>
-          <input mdcRadioInput type="radio" name="headerType" value="none" [(ngModel)]="headerType" />
-        </div>
-        <label mdcFormFieldLabel>No Header</label>
-      </div>
-      <div mdcFormField>
-        <div mdcRadio>
-          <input mdcRadioInput type="radio" name="headerType" value="spacer" [(ngModel)]="headerType" />
-        </div>
-        <label mdcFormFieldLabel>Toolbar Spacer</label>
-      </div>
-      <div mdcFormField>
-        <div mdcRadio>
-          <input mdcRadioInput type="radio" name="headerType" value="header" [(ngModel)]="headerType" />
-        </div>
-        <label mdcFormFieldLabel>Header</label>
-      </div> -->
     </main>
   </div>
 </div>
