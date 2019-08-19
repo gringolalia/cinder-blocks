@@ -1,6 +1,16 @@
+@import './theme.scss';
+@import url('https://fonts.googleapis.com/css?family=News+Cycle|Material+Icons');
+
+@import '~@angular/material/theming';
+
 $mdc-theme-primary: #607d8b;
 $mdc-theme-secondary: #ffffe0;
 $mdc-theme-background: #fff;
 
 // import theming for all mdc components:
 @import "material-components-web/material-components-web";
+
+@import '~@angular/material/theming';
+
+$custom-typography: mat-typography-config($font-family: '"News Cycle", sans-serif;');
+@include mat-core($custom-typography);
